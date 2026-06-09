@@ -3,109 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para uma pessoa especial, Yasmin</title>
+<title>Para Yasmin ❤️</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#ffd6e7,#ffeaf3);
-    min-height:100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ffd6e7,#ffeef5);
+    color:#5c2c40;
     overflow-x:hidden;
 }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+header{
     text-align:center;
+    padding:60px 20px;
 }
 
-h1{
-    color:#d63384;
+header h1{
     font-size:3rem;
     margin-bottom:15px;
 }
 
-.subtitulo{
-    color:#666;
+header p{
     font-size:1.2rem;
-    margin-bottom:40px;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#d63384;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin:15px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.motivos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.motivo{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.motivo:hover{
+    transform:translateY(-5px);
 }
 
 .vales{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .vale{
     background:white;
     border-radius:20px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    transition:0.3s;
-    position:relative;
-}
-
-.vale:hover{
-    transform:translateY(-8px);
-}
-
-.icone{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-h2{
-    color:#d63384;
-    margin-bottom:10px;
-}
-
-p{
-    color:#555;
-    margin-bottom:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
 button{
-    background:#ff4d88;
+    background:#ff5fa2;
     color:white;
     border:none;
-    padding:12px 20px;
-    border-radius:30px;
+    padding:10px 20px;
+    border-radius:20px;
     cursor:pointer;
-    font-size:1rem;
-    transition:0.3s;
+    margin-top:10px;
 }
 
 button:hover{
-    background:#e63973;
+    background:#ff2f87;
 }
 
-.rodape{
-    margin-top:50px;
-    color:#777;
-    font-style:italic;
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:1.1rem;
 }
 
-.coracao{
+.heart{
     position:fixed;
-    color:#ff4d88;
-    animation:subir 10s linear infinite;
-    opacity:0.5;
+    color:#ff4d94;
+    font-size:20px;
+    animation:fall linear infinite;
+    top:-10px;
 }
 
-@keyframes subir{
-    from{
-        transform:translateY(100vh);
-    }
+@keyframes fall{
     to{
-        transform:translateY(-100px);
+        transform:translateY(110vh);
     }
 }
 </style>
@@ -113,73 +123,189 @@ button:hover{
 
 <body>
 
-<div class="container">
-    <h1>💖 Para uma pessoa especial, Yasmin 💖</h1>
+<header>
+<h1>❤️ Para Yasmin ❤️</h1>
+<p>Um pequeno cantinho feito com carinho para alguém muito especial.</p>
+</header>
 
-    <p class="subtitulo">
-        Alguns vales especiais que você pode resgatar quando quiser.
-    </p>
+<section>
+<h2>💌 Uma Carta Para Você</h2>
 
-    <div class="vales">
+<div class="card">
+<p>
+Yasmin,<br><br>
 
-        <div class="vale">
-            <div class="icone">🌹</div>
-            <h2>Vale Saída</h2>
-            <p>Direito a uma saída especial para um lugar escolhido com carinho.</p>
-            <button onclick="resgatar('Vale Saída')">Resgatar</button>
-        </div>
+Existem pessoas que passam pela nossa vida de forma rápida, quase sem deixar marcas.
+Mas existem pessoas que transformam dias comuns em lembranças especiais apenas por estarem presentes.
 
-        <div class="vale">
-            <div class="icone">🍦</div>
-            <h2>Vale Sorvete</h2>
-            <p>Um sorvete delicioso para adoçar o dia.</p>
-            <button onclick="resgatar('Vale Sorvete')">Resgatar</button>
-        </div>
+Você é uma dessas pessoas.
 
-        <div class="vale">
-            <div class="icone">🤗</div>
-            <h2>Vale Abraço</h2>
-            <p>Um abraço apertado e cheio de carinho.</p>
-            <button onclick="resgatar('Vale Abraço')">Resgatar</button>
-        </div>
+Talvez você nem perceba o quanto seu sorriso, suas mensagens e sua companhia conseguem melhorar meus dias.
 
-        <div class="vale">
-            <div class="icone">💞</div>
-            <h2>Vale Companhia</h2>
-            <p>Companhia garantida para qualquer momento que precisar.</p>
-            <button onclick="resgatar('Vale Companhia')">Resgatar</button>
-        </div>
+Eu admiro a pessoa que você é, o seu jeito, suas qualidades e até os pequenos detalhes que fazem de você alguém tão única.
 
-        <div class="vale">
-            <div class="icone">🫶</div>
-            <h2>Vale Desabafo</h2>
-            <p>Um momento reservado para ouvir tudo com atenção e carinho.</p>
-            <button onclick="resgatar('Vale Desabafo')">Resgatar</button>
-        </div>
+Independentemente do que o futuro reserve, quero que você saiba que conhecer você foi uma das coisas mais bonitas que me aconteceram.
 
-    </div>
+Com carinho,<br><br>
+
+❤️ Fabrício
+</p>
+</div>
+</section>
+
+<section>
+<h2>❤️ 50 Motivos Pelos Quais Gosto de Você</h2>
+
+<div class="motivos">
+
+<div class="motivo">1. Porque seu sorriso ilumina meus dias.</div>
+<div class="motivo">2. Porque conversar com você é sempre bom.</div>
+<div class="motivo">3. Porque você é especial.</div>
+<div class="motivo">4. Porque sua presença me faz bem.</div>
+<div class="motivo">5. Porque você tem um jeito único.</div>
+<div class="motivo">6. Porque admiro sua força.</div>
+<div class="motivo">7. Porque você me inspira.</div>
+<div class="motivo">8. Porque gosto da sua companhia.</div>
+<div class="motivo">9. Porque você é gentil.</div>
+<div class="motivo">10. Porque gosto da sua voz.</div>
+
+<div class="motivo">11. Porque você me faz sorrir.</div>
+<div class="motivo">12. Porque você é inteligente.</div>
+<div class="motivo">13. Porque admiro suas conquistas.</div>
+<div class="motivo">14. Porque gosto do seu jeito de pensar.</div>
+<div class="motivo">15. Porque você deixa os dias mais leves.</div>
+<div class="motivo">16. Porque gosto de ouvir você.</div>
+<div class="motivo">17. Porque você é verdadeira.</div>
+<div class="motivo">18. Porque você me faz acreditar em coisas boas.</div>
+<div class="motivo">19. Porque você é marcante.</div>
+<div class="motivo">20. Porque gosto dos seus detalhes.</div>
+
+<div class="motivo">21. Porque você me faz feliz.</div>
+<div class="motivo">22. Porque você é divertida.</div>
+<div class="motivo">23. Porque gosto das nossas conversas.</div>
+<div class="motivo">24. Porque você me traz paz.</div>
+<div class="motivo">25. Porque você é admirável.</div>
+<div class="motivo">26. Porque você me surpreende.</div>
+<div class="motivo">27. Porque você é carinhosa.</div>
+<div class="motivo">28. Porque gosto de passar tempo com você.</div>
+<div class="motivo">29. Porque você torna tudo mais bonito.</div>
+<div class="motivo">30. Porque gosto do seu sorriso.</div>
+
+<div class="motivo">31. Porque você é autêntica.</div>
+<div class="motivo">32. Porque admiro quem você é.</div>
+<div class="motivo">33. Porque você me faz sonhar.</div>
+<div class="motivo">34. Porque gosto das suas qualidades.</div>
+<div class="motivo">35. Porque você é incrível.</div>
+<div class="motivo">36. Porque você me faz querer ser melhor.</div>
+<div class="motivo">37. Porque gosto de te ver feliz.</div>
+<div class="motivo">38. Porque você é única.</div>
+<div class="motivo">39. Porque você é importante para mim.</div>
+<div class="motivo">40. Porque você me inspira todos os dias.</div>
+
+<div class="motivo">41. Porque gosto da sua energia.</div>
+<div class="motivo">42. Porque você é especial de verdade.</div>
+<div class="motivo">43. Porque você deixa boas lembranças.</div>
+<div class="motivo">44. Porque gosto dos momentos com você.</div>
+<div class="motivo">45. Porque você merece coisas boas.</div>
+<div class="motivo">46. Porque você é alguém admirável.</div>
+<div class="motivo">47. Porque gosto de quem você é.</div>
+<div class="motivo">48. Porque você faz diferença.</div>
+<div class="motivo">49. Porque gosto de pensar em você.</div>
+<div class="motivo">50. Porque é você. ❤️</div>
 
 </div>
+</section>
+
+<section>
+<h2>🎁 Vales Românticos</h2>
+
+<div class="vales">
+
+<div class="vale">
+<h3>🍦 Vale Sorvete</h3>
+<p>Um sorvete escolhido por você.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🎬 Vale Cinema</h3>
+<p>Você escolhe o filme.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>☕ Vale Café</h3>
+<p>Uma conversa acompanhada de café.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🍝 Vale Jantar</h3>
+<p>Uma refeição especial.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🌳 Vale Passeio</h3>
+<p>Um passeio para onde você quiser.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🤗 Vale Abraço</h3>
+<p>Abraço com duração ilimitada.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>💬 Vale Conversa</h3>
+<p>Uma conversa sem pressa.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🎥 Vale Escolher o Filme</h3>
+<p>Sem reclamações do Fabrício.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>❤️ Vale Dia Especial</h3>
+<p>Um dia pensado especialmente para você.</p>
+<button>Resgatar</button>
+</div>
+
+<div class="vale">
+<h3>🎮 Vale Escolher a Atividade</h3>
+<p>Você decide o que vamos fazer.</p>
+<button>Resgatar</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+❤️ Obrigado por visitar este cantinho que preparei para você. ❤️
+<br><br>
+Com carinho, Fabrício.
+</footer>
 
 <script>
-function resgatar(vale){
-    alert("💖 Você resgatou: " + vale + " 💖"); 
+function criarCoracao(){
+    const coracao = document.createElement("div");
+    coracao.classList.add("heart");
+    coracao.innerHTML = "❤️";
+    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.animationDuration = (3 + Math.random()*5) + "s";
+    document.body.appendChild(coracao);
+
+    setTimeout(()=>{
+        coracao.remove();
+    },8000);
 }
 
-for(let i=0;i<20;i++){
-    const heart = document.createElement('div');
-    heart.classList.add('coracao');
-    heart.innerHTML = '❤';
-    heart.style.left = Math.random()*100+'vw';
-    heart.style.fontSize = (15 + Math.random()*25)+'px';
-    heart.style.animationDuration = (5 + Math.random()*8)+'s';
-    document.body.appendChild(heart);
-}
-<div class="rodape">
-    Feito com carinho especialmente para você, Yasmin ❤️
-</div>
+setInterval(criarCoracao,300);
+</script>
 
-<!-- Cole a foto bem aqui, logo após o rodapé -->
-<img src="WhatsApp Image 2026-06-09 at 3.55.45 PM.jpeg" alt="Foto Yasmin" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-</body>    
+</body>
 </html>
