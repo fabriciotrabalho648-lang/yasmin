@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nossa Galera ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ffd6e7,#ffeef5);
+    color:#5c2c40;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:15px;
+    color:#d63384;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Estilo do botão de voltar */
+.btn-voltar {
+    display: inline-block;
+    background: #5c2c40;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #d63384;
+}
+
+/* Mural de fotos e resenhas */
+.mural-amigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card-amigo {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.card-amigo img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.resenha {
+    font-style: italic;
+    color: #7d435a;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.nome-amigo {
+    font-weight: bold;
+    color: #d63384;
+    margin-top: 5px;
+}
+
+footer {
+    text-align:center;
+    padding:40px;
+    font-size:1.1rem;
+}
+
+.heart{
+    position:fixed;
+    color:#ff4d94;
+    font-size:20px;
+    animation:fall linear infinite;
+    top:-10px;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="btn-voltar">⬅ Voltar para o início</a>
+    <h1>✨ Cantinho dos Amigos & Resenhas</h1>
+    <p>Porque os nossos momentos com a galera também fazem história!</p>
+</header>
+
+<section>
+    <div class="mural-amigos">
+
+        <!-- EXEMPLO DE CARD DE AMIGO (Copie esse bloco para adicionar mais) -->
+        <div class="card-amigo">
+            <img src="FOTO_DO_AMIGO_OU_DA_GALERA.jpg" alt="Momento com amigos">
+            <p class="resenha">"Lembra daquele dia que a gente se perdeu tentando achar o lugar? Melhores risadas!"</p>
+            <p class="nome-amigo">- Resenha do Grupo</p>
+        </div>
+        
+        <!-- FIM DO EXEMPLO -->
+
+    </div>
+</section>
+
+<footer>
+❤️ Feito com carinho para lembrar de quem está sempre com a gente. ❤️
+</footer>
+
+<script>
+function criarCoracao(){
+    const coracao = document.createElement("div");
+    coracao.classList.add("heart");
+    coracao.innerHTML = "❤️";
+    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.animationDuration = (3 + Math.random()*5) + "s";
+    document.body.appendChild(coracao);
+
+    setTimeout(()=>{
+        coracao.remove();
+    },8000);
+}
+setInterval(criarCoracao,300);
+</script>
+
+</body>
+</html>
