@@ -1,221 +1,705 @@
+
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nossa Galera ❤️</title>
+
+<title>Para Yasmin ❤️</title>
+
+
 
 <style>
+
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
+
+
 
 body{
+
     font-family: 'Segoe UI', sans-serif;
+
     background: linear-gradient(135deg,#ffd6e7,#ffeef5);
+
     color:#5c2c40;
+
     overflow-x:hidden;
+
 }
+
+
 
 header{
+
     text-align:center;
-    padding:50px 20px;
+
+    padding:60px 20px;
+
 }
+
+
 
 header h1{
-    font-size:2.5rem;
+
+    font-size:3rem;
+
     margin-bottom:15px;
-    color:#d63384;
+
 }
+
+
 
 header p{
+
     font-size:1.2rem;
+
 }
+
+
 
 section{
+
     max-width:1000px;
+
     margin:auto;
-    padding:20px;
+
+    padding:40px 20px;
+
 }
 
-.btn-voltar {
-    display: inline-block;
-    background: #5c2c40;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    transition: 0.3s;
-}
 
-.btn-voltar:hover {
-    background: #d63384;
-}
 
-.mural-amigos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
+h2{
 
-.card-amigo {
-    background: white;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-amigo img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-footer {
     text-align:center;
-    padding:40px;
-    font-size:1.1rem;
+
+    margin-bottom:30px;
+
+    color:#d63384;
+
 }
+
+
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin:15px 0;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+/* Estilização da foto */
+
+.foto-container {
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    max-width: 500px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.foto-container img {
+
+    width: 100%;
+
+    max-height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.foto-legenda {
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    color: #d63384;
+
+    line-height: 1.4;
+
+}
+
+
+
+.motivos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:15px;
+
+}
+
+
+
+.motivo{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.motivo:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.vales{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.vale{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+button{
+
+    background:#ff5fa2;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+}
+
+
+
+button:hover{
+
+    background:#ff2f87;
+
+}
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    font-size:1.1rem;
+
+}
+
+
 
 .heart{
+
     position:fixed;
+
     color:#ff4d94;
+
     font-size:20px;
+
     animation:fall linear infinite;
+
     top:-10px;
+
 }
 
+
+
 @keyframes fall{
+
     to{
+
         transform:translateY(110vh);
+
     }
+
 }
+
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <header>
-    <a href="index.html" class="btn-voltar">⬅ Voltar para o início</a>
-    <h1>✨ Cantinho dos Amigos</h1>
-    <p>Porque os nossos melhores momentos com a galera ficam guardados aqui!</p>
+
+<h1>❤️ Para Yasmin ❤️</h1>
+
+<p>Um pequeno cantinho feito com carinho para alguém muito especial.</p>
+
 </header>
 
+
+
 <section>
-    <div class="mural-amigos">
 
-        <!-- FOTO 1 -->
-        <div class="card-amigo">
-            <img src="amigos1.jpeg" alt="Momento com amigos">
-        </div>
-        
-        <!-- FOTO 2 -->
-        <div class="card-amigo">
-            <img src="amigos2.jpeg" alt="Momento com amigos">
-        </div>
+<h2>💌 Uma Carta Para Você</h2>
 
-        <!-- FOTO 3 -->
-        <div class="card-amigo">
-            <img src="amigos3.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 4 -->
-        <div class="card-amigo">
-            <img src="amigos4.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 5 -->
-        <div class="card-amigo">
-            <img src="amigos5.jpeg" alt="Momento com amigos">
-        </div>
+<div class="card">
 
-        <!-- FOTO 6 -->
-        <div class="card-amigo">
-            <img src="amigos6.jpeg" alt="Momento com amigos">
-        </div>
+<p>
 
-        <!-- FOTO 7 -->
-        <div class="card-amigo">
-            <img src="amigos7.jpeg" alt="Momento com amigos">
-        </div>
+Yasmin,<br><br>
 
-        <!-- FOTO 8 -->
-        <div class="card-amigo">
-            <img src="amigos8.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 9 -->
-        <div class="card-amigo">
-            <img src="amigos9.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 10 -->
-        <div class="card-amigo">
-            <img src="amigos10.jpeg" alt="Momento com amigos">
-        </div>
+Existem pessoas que passam pela nossa vida de forma rápida, quase sem deixar marcas.
 
-        <!-- FOTO 11 -->
-        <div class="card-amigo">
-            <img src="amigos11.jpeg" alt="Momento com amigos">
-        </div>
+Mas existem pessoas que transformam dias comuns in lembranças especiais apenas por estarem presentes.
 
-        <!-- FOTO 12 -->
-        <div class="card-amigo">
-            <img src="amigos12.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 13 -->
-        <div class="card-amigo">
-            <img src="amigos13.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 14 -->
-        <div class="card-amigo">
-            <img src="amigos14.jpeg" alt="Momento com amigos">
-        </div>
+Você é uma dessas pessoas.
 
-        <!-- FOTO 16 -->
-        <div class="card-amigo">
-            <img src="amigos16.jpeg" alt="Momento com amigos">
-        </div>
 
-        <!-- FOTO 17 -->
-        <div class="card-amigo">
-            <img src="amigos17.jpeg" alt="Momento com amigos">
-        </div>
 
-    </div>
+Talvez você nem perceba o quanto seu sorriso, suas mensagens e sua companhia conseguem melhorar meus dias.
+
+
+
+Eu admiro a pessoa que você é, o seu jeito, suas qualidades e até os pequenos detalhes que fazem de você alguém tão única.
+
+
+
+Independentemente do que o futuro reserve, quero que você saiba que conhecer você foi uma das coisas mais bonitas que me aconteceram.
+
+
+
+Com carinho,<br><br>
+
+
+
+❤️ Fabrício
+
+</p>
+
+</div>
+
 </section>
 
+
+
+<!-- SEÇÃO DA FOTO ADICIONADA -->
+
+<section>
+
+  <div class="foto-container">
+
+      <img src="nossa-foto.jpg" alt="Nossa Foto">
+
+      <p class="foto-legenda">Pois é, KKKKK. Hoje é 12 de Junho. Feliz dia dos namorados ( Surtos e gritos internos ) ❤️</p>
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+<h2>❤️ 50 Motivos Pelos Quais Gosto de Você</h2>
+
+
+
+<div class="motivos">
+
+
+
+<div class="motivo">1. Porque seu sorriso ilumina meus dias.</div>
+
+<div class="motivo">2. Porque conversar com você é sempre bom.</div>
+
+<div class="motivo">3. Porque você é especial.</div>
+
+<div class="motivo">4. Porque sua presença me faz bem.</div>
+
+<div class="motivo">5. Porque você tem um jeito único.</div>
+
+<div class="motivo">6. Porque admiro sua força.</div>
+
+<div class="motivo">7. Porque você me inspira.</div>
+
+<div class="motivo">8. Porque gosto da sua companhia.</div>
+
+<div class="motivo">9. Porque você é gentil.</div>
+
+<div class="motivo">10. Porque gosto da sua voz.</div>
+
+
+
+<div class="motivo">11. Porque você me faz sorrir.</div>
+
+<div class="motivo">12. Porque você é inteligente.</div>
+
+<div class="motivo">13. Porque admiro suas conquests.</div>
+
+<div class="motivo">14. Porque gosto do seu jeito de pensar.</div>
+
+<div class="motivo">15. Porque você deixa os dias mais leves.</div>
+
+<div class="motivo">16. Porque gosto de ouvir você.</div>
+
+<div class="motivo">17. Porque você é verdadeira.</div>
+
+<div class="motivo">18. Porque você me faz acreditar em coisas boas.</div>
+
+<div class="motivo">19. Porque você é marcante.</div>
+
+<div class="motivo">20. Porque gosto dos seus detalhes.</div>
+
+
+
+<div class="motivo">21. Porque você me faz feliz.</div>
+
+<div class="motivo">22. Porque você é divertida.</div>
+
+<div class="motivo">23. Porque gosto das nossas conversas.</div>
+
+<div class="motivo">24. Porque você me traz paz.</div>
+
+<div class="motivo">25. Porque você é admirável.</div>
+
+<div class="motivo">26. Porque você me surpreende.</div>
+
+<div class="motivo">27. Porque você é carinhosa.</div>
+
+<div class="motivo">28. Porque gosto de passar tempo com você.</div>
+
+<div class="motivo">29. Porque você torna tudo mais bonito.</div>
+
+<div class="motivo">30. Porque gosto do seu sorriso.</div>
+
+
+
+<div class="motivo">31. Porque você é autêntica.</div>
+
+<div class="motivo">32. Porque admiro quem você é.</div>
+
+<div class="motivo">33. Porque você me faz sonhar.</div>
+
+<div class="motivo">34. Porque gosto das suas qualidades.</div>
+
+<div class="motivo">35. Porque você é incrível.</div>
+
+<div class="motivo">36. Porque você me faz querer ser melhor.</div>
+
+<div class="motivo">37. Porque gosto de te ver feliz.</div>
+
+<div class="motivo">38. Porque você é única.</div>
+
+<div class="motivo">39. Porque você é importante para mim.</div>
+
+<div class="motivo">40. Porque você me inspira todos os dias.</div>
+
+
+
+<div class="motivo">41. Porque gosto da sua energia.</div>
+
+<div class="motivo">42. Porque você é especial de verdade.</div>
+
+<div class="motivo">43. Porque você deixa boas lembranças.</div>
+
+<div class="motivo">44. Porque gosto dos momentos com você.</div>
+
+<div class="motivo">45. Porque você merece coisas boas.</div>
+
+<div class="motivo">46. Porque você é alguém admirável.</div>
+
+<div class="motivo">47. Porque gosto de quem você é.</div>
+
+<div class="motivo">48. Porque você faz diferença.</div>
+
+<div class="motivo">49. Porque gosto de pensar em você.</div>
+
+<div class="motivo">50. Porque é você. ❤️</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>🎁 Vales Românticos</h2>
+
+
+
+<div class="vales">
+
+
+
+<div class="vale">
+
+<h3>🍦 Vale Sorvete</h3>
+
+<p>Um sorvete escolhido por você.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🎬 Vale Cinema</h3>
+
+<p>Você escolhe o filme.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>☕ Vale Café</h3>
+
+<p>Uma conversa acompanhada de café.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🍝 Vale Jantar</h3>
+
+<p>Uma refeição especial.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🌳 Vale Passeio</h3>
+
+<p>Um passeio para onde você quiser.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🤗 Vale Abraço</h3>
+
+<p>Abraço com duração ilimitada.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>💬 Vale Conversa</h3>
+
+<p>Uma conversa sem pressa.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🎥 Vale Escolher o Filme</h3>
+
+<p>Sem reclamações do Fabrício.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>❤️ Vale Dia Especial</h3>
+
+<p>Um dia pensado especialmente para você.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+<div class="vale">
+
+<h3>🎮 Vale Escolher a Atividade</h3>
+
+<p>Você decide o que vamos fazer.</p>
+
+<button>Resgatar</button>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- BOTÃO PARA IR PARA A PÁGINA DOS AMIGOS -->
+
+<section style="text-align: center; padding: 20px;">
+
+    <a href="amigos.html" style="display: inline-block; background: #ff5fa2; color: white; text-decoration: none; padding: 15px 30px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(0,0,0,.15); transition: 0.3s;">
+
+        ✨ Ver Fotos e Resenhas da Galera
+
+    </a>
+
+</section>
+
+
+
 <footer>
-❤️ Feito com carinho para lembrar de quem está sempre com a gente. ❤️
+
+❤️ Obrigado por visitar este cantinho que preparei para você. ❤️
+
+<br><br>
+
+Com carinho, Fabrício.
+
 </footer>
 
+
+
 <script>
+
 function criarCoracao(){
+
     const coracao = document.createElement("div");
+
     coracao.classList.add("heart");
+
     coracao.innerHTML = "❤️";
+
     coracao.style.left = Math.random() * 100 + "vw";
+
     coracao.style.animationDuration = (3 + Math.random()*5) + "s";
+
     document.body.appendChild(coracao);
 
+
+
     setTimeout(()=>{
+
         coracao.remove();
+
     },8000);
+
 }
+
+
+
 setInterval(criarCoracao,300);
+
 </script>
 
+
+
 </body>
-</html>
+
+</html> 
+
